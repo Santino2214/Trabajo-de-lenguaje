@@ -3,23 +3,98 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0">
-  <title>Bienvenido al verdadero Turismo!!</title>
-  <meta name="description"
-  content="Meter descripcion">
-  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Westview, Sokovia</title>
+  <meta name="description" content="Westview, la ciudad tecnológica de Sokovia: cinco barrios con historia, murales, puertos y mucho código.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
   <header>
-    <nav>
-      <h1>Buenas y bienvenidos a este increible lugar!!!</h1>
+    <nav class="navbar navbar-expand-lg" aria-label="Menú principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Westview <span class="navbar-pais">· Sokovia</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+          <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <button id="btn-modo" class="btn btn-outline-primary btn-sm ms-lg-3" type="button" aria-pressed="false">🌙 Modo oscuro</button>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main>
-  <h2>Buenas, en esta página vas a encontrar un monton de nuevos lugares para explorar!</h2>
-  <p>Estas preparado para verlo todo?</p>
-  <a href="ciudad.html">Te invito a que conozcas la ciudad de Berlin!</a>
+    <div class="hero">
+      <img src="img/atardecer.jpg" class="hero-img" alt="Vista panorámica de Westview al atardecer con el río Binario">      
+      <div class="hero-texto">
+        <h1>Bienvenidos a Westview, Sokovia</h1>
+        <p>La capital tecnológica de Sokovia: una ciudad donde cada barrio guarda una historia hecha de bits, murales y puertos.</p>
+      </div>
+    </div>
+
+    <section id="explorar">
+      <h2>Explorá el sitio</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Ciudad</h3>
+          <p>Su historia, sus datos y la identidad de Westview.</p>
+          <a class="btn btn-primary" href="ciudad.html">Ver ciudad</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Lugares</h3>
+          <p>Los cinco barrios y qué hacer en cada uno.</p>
+          <a class="btn btn-primary" href="lugares.html">Ver lugares</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Contacto</h3>
+          <p>Teléfono, email y dónde está nuestro local.</p>
+          <a class="btn btn-primary" href="contacto.html">Contactarnos</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="cifras">
+      <h2>Westview en pocas palabras</h2>
+      <blockquote class="lema">
+        <p>El hogar es donde uno lo hace.</p>
+      </blockquote>
+      <div class="cifras">
+        <div class="cifra">
+          <span class="cifra-numero">5</span>
+          <span class="cifra-texto">barrios con identidad propia</span>
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">1</span>
+          <span class="cifra-texto">río, el Binario, que cruza la ciudad</span>
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">3</span>
+          <span class="cifra-texto">medios de transporte público</span>
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">24/7</span>
+          <span class="cifra-texto">una ciudad que nunca se desconecta</span>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p><small>© 2026 Westview, Sokovia. Lenguajes Informáticos I - UNaHur</small></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
