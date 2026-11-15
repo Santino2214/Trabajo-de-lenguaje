@@ -1,0 +1,72 @@
+:root {
+  --color-fondo: #FFF8F0;          
+  --color-fondo-suave: #FBE9D7;    
+  --color-superficie: #FFFFFF;     
+  --color-texto: #4A3426;          
+  --color-titulo: #5C3A21;         
+  --color-subtitulo: #7A4A24;      
+  --color-acento: #A64B14;         
+  --color-acento-oscuro: #7F3A0F;  
+  --color-borde: #E8CDB2;          
+
+  --fuente-principal: "Nunito";
+  --fuente-titulos: "Lora";
+
+  --espacio: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal), sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulos), serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--color-titulo);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-subtitulo);
+  margin-bottom: var(--espacio);
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--color-acento);
+  margin-top: var(--espacio);
+  margin-bottom: 0.5rem;
+}
+
+
+p {
+  margin-bottom: var(--espacio);
+}
+
+a {
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--color-acento-oscuro);
+}
+
