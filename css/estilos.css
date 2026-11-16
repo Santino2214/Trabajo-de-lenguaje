@@ -32,7 +32,6 @@ body {
   flex-direction: column;
 }
 
-
 h1, h2, h3 {
   font-family: var(--fuente-titulos), serif;
   line-height: 1.3;
@@ -56,7 +55,6 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-
 p {
   margin-bottom: var(--espacio);
 }
@@ -68,5 +66,74 @@ a {
 
 a:hover {
   color: var(--color-acento-oscuro);
+}
+
+header {
+  background-color: var(--color-fondo-suave);
+  border-bottom: 2px solid var(--color-borde);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem var(--espacio);
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main > h2 {
+  margin-top: 0.5rem;
+}
+
+section {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-bottom: var(--espacio);
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+dt {
+  font-weight: 700;
+  color: var(--color-subtitulo);
+}
+
+dd {
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+}
+
+#indice {
+  background-color: var(--color-fondo-suave);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#indice h2 {
+  margin-bottom: 0.5rem;
+}
+
+#indice ol {
+  margin-bottom: 0;
 }
 
