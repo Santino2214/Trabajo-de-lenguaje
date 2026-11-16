@@ -460,3 +460,20 @@ section {
   background-color: var(--color-acento-oscuro);
   color: var(--color-superficie);
 }
+
+.barrio-foto {
+  margin: 1rem 0;
+}
+
+.barrio-foto img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background-color: var(--color-fondo-suave);
+  border-radius: 12px;
+}
+
+.barrio-foto figcaption {
+  margin-top: 0.4rem;
+  text-align: center;
+}
