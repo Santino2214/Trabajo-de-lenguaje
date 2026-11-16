@@ -84,3 +84,10 @@ if (formulario) {
   });
 }
 
+const botonSubir = document.getElementById("btn-subir");
+
+if (botonSubir) {
+  window.addEventListener("scroll", () => {
+    botonSubir.classList.toggle("visible", window.scrollY > 300);
+  });
+}
