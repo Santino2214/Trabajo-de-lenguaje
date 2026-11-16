@@ -338,3 +338,70 @@ body.oscuro .alert-danger {
   --bs-alert-bg: #4A1F24;
   --bs-alert-border-color: #8A3A42;
 }
+
+.hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 0;
+  margin: 0;
+}
+
+.hero-texto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 2rem;
+  /* Degradé oscuro para que el texto blanco se lea sobre cualquier foto */
+  background: linear-gradient(to top, rgba(40, 22, 10, 0.9), rgba(40, 22, 10, 0.2) 75%);
+}
+
+.hero-texto h1 {
+  color: #FFF8F0;
+  margin-bottom: 0.5rem;
+}
+
+.hero-texto p {
+  color: #FFF8F0;
+  max-width: 520px;
+}
+
+.cifras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cifra {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cifra-numero {
+  font-family: var(--fuente-titulos), serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-acento);
+}
+
+.cifra-texto {
+  color: var(--color-texto);
+}
