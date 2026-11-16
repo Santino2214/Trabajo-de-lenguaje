@@ -137,3 +137,31 @@ dd {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+figure {
+  margin-bottom: var(--espacio);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-subtitulo);
+}
+
+footer {
+  background-color: var(--color-fondo-suave);
+  border-top: 2px solid var(--color-borde);
+  padding: 1.5rem var(--espacio);
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
