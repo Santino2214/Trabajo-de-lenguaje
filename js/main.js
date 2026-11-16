@@ -25,3 +25,15 @@ if (botonModo) {
     }
   });
 }
+
+const formulario = document.getElementById("form-contacto");
+
+function mostrarError(campo, mensaje) {
+  campo.classList.add("is-invalid");
+  document.getElementById("error-" + campo.id).textContent = mensaje;
+}
+
+function limpiarError(campo) {
+  campo.classList.remove("is-invalid");
+  document.getElementById("error-" + campo.id).textContent = "";
+}
