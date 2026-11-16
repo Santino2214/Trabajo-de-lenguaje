@@ -237,3 +237,45 @@ header {
   box-shadow: inset 0 0 0 1px var(--color-borde);
 }
 
+.card {
+  --bs-card-bg: var(--color-superficie);
+  --bs-card-border-color: var(--color-borde);
+  --bs-card-border-radius: 12px;
+  --bs-card-cap-bg: var(--color-fondo-suave);
+  color: var(--color-texto);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(122, 74, 36, 0.15);
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-acento);
+  --bs-btn-border-color: var(--color-acento);
+  --bs-btn-color: var(--color-superficie);
+  --bs-btn-hover-bg: var(--color-acento-oscuro);
+  --bs-btn-hover-border-color: var(--color-acento-oscuro);
+  --bs-btn-hover-color: var(--color-superficie);
+  --bs-btn-active-bg: var(--color-acento-oscuro);
+  --bs-btn-active-border-color: var(--color-acento-oscuro);
+  --bs-btn-active-color: var(--color-superficie);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--color-acento);
+  --bs-btn-border-color: var(--color-acento);
+  --bs-btn-hover-bg: var(--color-acento);
+  --bs-btn-hover-border-color: var(--color-acento);
+  --bs-btn-hover-color: var(--color-superficie);
+  --bs-btn-active-bg: var(--color-acento-oscuro);
+  --bs-btn-active-border-color: var(--color-acento-oscuro);
+  --bs-btn-active-color: var(--color-superficie);
+  transition: background-color 0.2s, color 0.2s;
+}
