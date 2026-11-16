@@ -189,3 +189,51 @@ header {
   top: 0;
   z-index: 1030;
 }
+
+.etiqueta-barrio {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-acento);
+  color: var(--color-superficie);
+}
+
+.navbar {
+  --bs-navbar-color: var(--color-acento);
+  --bs-navbar-hover-color: var(--color-acento-oscuro);
+  --bs-navbar-active-color: var(--color-acento-oscuro);
+  --bs-navbar-brand-color: var(--color-titulo);
+  --bs-navbar-brand-hover-color: var(--color-acento-oscuro);
+  --bs-navbar-toggler-border-color: var(--color-acento);
+  --bs-navbar-nav-link-padding-x: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+  font-family: var(--fuente-titulos), serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navbar-pais {
+  font-family: var(--fuente-principal), sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-subtitulo);
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: var(--color-superficie);
+}
+
+.navbar .nav-link.active {
+  box-shadow: inset 0 0 0 1px var(--color-borde);
+}
+
